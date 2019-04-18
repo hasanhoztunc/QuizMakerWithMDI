@@ -10,8 +10,8 @@ public class DatabaseConnection {
     // public void Baglan(){
 //         try {
 //            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
-//            //Connection conn =DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;");
-//            Connection conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");
+//            //Connection conn =DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;");
+//            Connection conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");
 //                    
 //                    
 //            System.out.println("connected");
@@ -31,8 +31,8 @@ public class DatabaseConnection {
         
          try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
-            //Connection conn =DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;");
-            Connection conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");
+            //Connection conn =DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;");
+            Connection conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");
 //            StringBuilder build=new StringBuilder();
 //            build.append("Insert into Soru([SoruMetni],[ZorlukSeviyesiID],[DogruCevap],[Puan],[DersID],[ASecenegi],[BSecenegi],[CSecenegi],[DSecenegi]) values('"+soruMetni+"','"+soruZorlugu+"','"+dogruCevap+"','"+Puan+"','"+Ders+"','"+aSecenegi+"','"+bSecenegi+"','"+cSecenegi+"','"+dSecenegi"')";
 //            build.append(soruMetni).append("\\,\\");
@@ -75,7 +75,7 @@ public class DatabaseConnection {
          try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
            
-            Connection conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");
+            Connection conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");
 //            
             String sql="Insert into DogruYanlisSoru([ZorlukSeviyesiID],[DogruCevapID],[Puan],[DersID],[SoruMetni]) values(?,?,?,?,?)";
 //            
@@ -99,7 +99,7 @@ public class DatabaseConnection {
          try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
            
-            Connection conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");
+            Connection conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");
 //            
             String sql="Insert into KlasikSoru([ZorlukSeviyesiID],[DogruCevap],[Puan],[DersID],[SoruMetni]) values(?,?,?,?,?)";
 //            
@@ -123,7 +123,7 @@ public class DatabaseConnection {
             try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
            
-            Connection conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");
+            Connection conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");
 //            
             String sql="Insert into Dersler(DersAdi) values(?)";
 //            
@@ -144,7 +144,7 @@ public class DatabaseConnection {
          try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
            
-            Connection conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");
+            Connection conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");
 //            
             String sql="Delete from Dersler Where DersAdi=?";
 //            
@@ -165,7 +165,7 @@ public class DatabaseConnection {
           try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
            
-            Connection conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");
+            Connection conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");
 //            
             String sql="Update Dersler set DersAdi=? Where DersAdi=?";
 //            
@@ -186,7 +186,7 @@ public class DatabaseConnection {
          try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
            
-            Connection conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");
+            Connection conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");
 //            
             String sql="Insert into ZorlukSeviyesi(ZorlukSeviyesi) values(?)";
 //            
@@ -207,7 +207,7 @@ public class DatabaseConnection {
           try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
            
-            Connection conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");
+            Connection conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");
 //            
             String sql="Delete from ZorlukSeviyesi Where ZorlukSeviyesi=?";
 //            
