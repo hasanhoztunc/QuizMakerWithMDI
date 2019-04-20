@@ -32,7 +32,7 @@ public class DatabaseConnection {
          try {
           //  Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
             //Connection conn =DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;");
-            //Connection conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");
+            //Connection conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");
 //            StringBuilder build=new StringBuilder();
 //            build.append("Insert into Soru([SoruMetni],[ZorlukSeviyesiID],[DogruCevap],[Puan],[DersID],[ASecenegi],[BSecenegi],[CSecenegi],[DSecenegi]) values('"+soruMetni+"','"+soruZorlugu+"','"+dogruCevap+"','"+Puan+"','"+Ders+"','"+aSecenegi+"','"+bSecenegi+"','"+cSecenegi+"','"+dSecenegi"')";
 //            build.append(soruMetni).append("\\,\\");
