@@ -77,7 +77,7 @@ public class DatabaseConnection {
          try {
             //Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
            
-            //Connection conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");
+            //Connection conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");
             
             String sql="Insert into DogruYanlisSoru([ZorlukSeviyesiID],[DogruCevapID],[Puan],[DersID],[SoruMetni]) values(?,?,?,?,?)";
            scon=SqlServerConnect.getSqlServerConnect();
@@ -101,7 +101,7 @@ public class DatabaseConnection {
          try {
             //Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
            
-            //Connection conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");
+            //Connection conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");
             
             String sql="Insert into KlasikSoru([ZorlukSeviyesiID],[DogruCevap],[Puan],[DersID],[SoruMetni]) values(?,?,?,?,?)";
             scon=SqlServerConnect.getSqlServerConnect();
@@ -125,7 +125,7 @@ public class DatabaseConnection {
             try {
             //Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
            
-            //Connection conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");
+            //Connection conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");
             
             String sql="Insert into Dersler(DersAdi) values(?)";
             scon=SqlServerConnect.getSqlServerConnect();
@@ -146,7 +146,7 @@ public class DatabaseConnection {
          try {
             //Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
            
-            //Connection conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");
+            //Connection conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");
             
             String sql="Delete from Dersler Where DersAdi=?";
             scon=SqlServerConnect.getSqlServerConnect();
@@ -167,7 +167,7 @@ public class DatabaseConnection {
           try {
             //Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
            
-            //Connection conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");          
+            //Connection conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");          
              String sql="Update Dersler set DersAdi=? Where DersAdi=?";
             scon=SqlServerConnect.getSqlServerConnect();
             PreparedStatement prepared=scon.conn.prepareStatement(sql);
@@ -187,7 +187,7 @@ public class DatabaseConnection {
          try {
             //Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
            
-            //Connection conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");
+            //Connection conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");
             
             String sql="Insert into ZorlukSeviyesi(ZorlukSeviyesi) values(?)";
             scon=SqlServerConnect.getSqlServerConnect();
@@ -208,7 +208,7 @@ public class DatabaseConnection {
           try {
             //Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
            
-            //Connection conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");
+            //Connection conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");
             
             String sql="Delete from ZorlukSeviyesi Where ZorlukSeviyesi=?";
             scon=SqlServerConnect.getSqlServerConnect();
