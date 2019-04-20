@@ -14,7 +14,7 @@ public class SqlServerConnect {
     private SqlServerConnect(){
         try{
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
-            conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");
+            conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");
         }catch(Exception e){
         
         }
@@ -30,7 +30,7 @@ public class SqlServerConnect {
           //try{
             //Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
            
-            //Connection conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");
+            //Connection conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");
            
             //PreparedStatement stat=statement;
             
