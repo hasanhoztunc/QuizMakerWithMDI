@@ -1,6 +1,7 @@
 
 package View;
 
+import Model.SqlServerConnect;
 import Presenter.Helper;
 import javax.swing.JInternalFrame;
 import javax.swing.event.InternalFrameEvent;
@@ -19,8 +20,9 @@ public class MainForm extends javax.swing.JFrame {
     ZorlukEkle zorlukEkle;
     ZorlukSil zorlukSil;
     TipListele tipListele;
-    
+    SqlServerConnect sqlConnect;
     public MainForm() {
+        sqlConnect=SqlServerConnect.getSqlServerConnect();
         initComponents();
     }
     
