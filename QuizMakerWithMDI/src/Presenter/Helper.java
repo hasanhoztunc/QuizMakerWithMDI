@@ -17,7 +17,7 @@ public class Helper {
        try{
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
            
-            Connection conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");           
+            Connection conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");           
             String sql="Select DersAdi from Dersler";
             PreparedStatement stat=conn.prepareStatement(sql);
             ResultSet resultSet=stat.executeQuery();
@@ -41,7 +41,7 @@ public class Helper {
        try{
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
            
-            Connection conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");           
+            Connection conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");           
             String sql="Select ZorlukSeviyesi from ZorlukSeviyesi";
             PreparedStatement stat=conn.prepareStatement(sql);
             ResultSet resultSet=stat.executeQuery();

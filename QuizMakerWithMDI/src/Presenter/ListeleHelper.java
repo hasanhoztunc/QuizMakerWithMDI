@@ -15,7 +15,7 @@ public class ListeleHelper {
          try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
            
-            Connection conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");
+            Connection conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");
            
             String sql="Select CoktanSecmeliSoru.SoruMetni,Dersler.DersAdi,CoktanSecmeliSoru.Puan,ZorlukSeviyesi.ZorlukSeviyesi from CoktanSecmeliSoru join Dersler on(CoktanSecmeliSoru.DersID=Dersler.DersID) join ZorlukSeviyesi on(CoktanSecmeliSoru.ZorlukSeviyesiID=ZorlukSeviyesi.ZorlukSeviyesiID)";
             
@@ -35,7 +35,7 @@ public class ListeleHelper {
       try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
            
-            Connection conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");
+            Connection conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");
          
             String sql="Select KlasikSoru.SoruMetni,Dersler.DersAdi,KlasikSoru.Puan,ZorlukSeviyesi.ZorlukSeviyesi from KlasikSoru join Dersler on(KlasikSoru.DersID=Dersler.DersID) join ZorlukSeviyesi on(KlasikSoru.ZorlukSeviyesiID=ZorlukSeviyesi.ZorlukSeviyesiID)";
            
@@ -55,7 +55,7 @@ public class ListeleHelper {
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
            
-            Connection conn=DriverManager.getConnection("jdbc:sqlserver://;databaseName=QuizMaker;integratedSecurity=true");
+            Connection conn=DriverManager.getConnection("jdbc:sqlserver://DESKTOP-4O8NDO1;databaseName=QuizMaker;integratedSecurity=true");
          
             String sql="Select DogruYanlisSoru.SoruMetni,Dersler.DersAdi,DogruYanlisSoru.Puan,ZorlukSeviyesi.ZorlukSeviyesi from DogruYanlisSoru join Dersler on(DogruYanlisSoru.DersID=Dersler.DersID) join ZorlukSeviyesi on(DogruYanlisSoru.ZorlukSeviyesiID=ZorlukSeviyesi.ZorlukSeviyesiID)";
            
